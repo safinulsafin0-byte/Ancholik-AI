@@ -17,7 +17,7 @@ app.post("/translate", async (req, res) => {
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
     const prompt = `তুমি বাংলাদেশের আঞ্চলিক ভাষার বিশেষজ্ঞ। তোমার কাজ হলো ${district} জেলার মানুষ যেভাবে সত্যিকারের কথ্য ভাষায় কথা বলে, হুবহু সেইভাবে রূপান্তর করা।
 
